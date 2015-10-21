@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="script.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<body>
+    <style>
+        #container {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin: 0;
+  }
+#buttons {
+    width: 400px;
+    margin: 0 auto;
+  }
+#playerSide {
+    float:left;
+    margin: 0 0 0 0;
+  }
+#computerSide {
+    float:right;
+    margin: 0 0 0 0;
+  }
+#instructions {
+    padding: 0 0 0 40%;
+  }
+.button1 {
+    position: relative;
+    top: 200px;
+    margin: auto;
+    display:inline-block;
+    text-align: center;
+  }
+input[type=button] {
+    border-radius: 20px;
+    width:100px;
+    height:50px;
+    font-size: 20px;
+  }
+.cupWeapon {
+    margin: 20% 0 0 45%;
+    font-size: 30px;
+  }
+#replayButton {
+    background-color: #FFD700;
+    margin:auto;
+    position: relative;
+    top: 220px;
+    color: black;
+  }
+#yourResult {
+    float: left;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    font-size: 20px;
+  }
+#cupResult {
+    float: right;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    font-size: 20px;
+  }
+#yourResult, #cupResult {
+    display: inline-block;
+  }
+img {
+    position: relative;
+  }
+#countDown {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    color: red;
+    font-size: 30px;
+  }
+#you {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 53%;
+    left: 4%;
+    font-size: 25px;
+  }
+#cup {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 53%;
+    right: 10%;
+    font-size: 25px;
+  }
+  body{
+    color:red; 
+  }
+        
+    </style>
+<div id='computerSide'>
+    <h1>Computer</h1>
+    <img src="http://s22.postimg.org/sv6ieobip/rock1.png" id="one" height="130" width="130"/>
+    <div id="you"></div>
+    
+</div>
+<div id='playerSide'>
+     <h1> You </h1>
+    <img src="http://s28.postimg.org/syouexkjx/rock2.png" id="two" height="130" width="130"/>
+    <div id="comp"></div>
+</div>
+<div id='instructions'>
+     <h2>You Shall <b>Die</b></h2>
+</div>
+<div id="container">
+    <div id='buttons'>
+        <input type='button' value='rock' id='rock' class='button1'/>
+        <input type='button' value='paper' id='paper' class='button1'/>
+        <input type='button' value='scissors' id='scissors' class='button1'/>
+        <input type='button' value='Replay' id='replayButton'/>
+    </div>
+</div>
+<div id="yourResult"></div>
+<div id="comResult"></div>
+</body>
+</html>
